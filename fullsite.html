@@ -97,57 +97,7 @@
 
     .nav-links a:hover { color: var(--gold-light); }
 
-/* ─ Contact form overlay ─ */
-    #cform{
-      position:fixed;inset:0;z-index:50;
-      display:flex;align-items:center;justify-content:center;
-      opacity:0;transition:opacity 1.4s;pointer-events:none;
-      padding:2rem;
-    }
-    #cform.vis{opacity:1;pointer-events:auto;}
-    .cf-inner{
-      width:100%;max-width:720px;max-height:92vh;overflow-y:auto;
-      background:rgba(8,8,8,0.94);backdrop-filter:blur(20px);
-      border:1px solid rgba(184,154,106,0.2);
-      padding:3.5rem 4rem;
-      scrollbar-width:none;
-    }
-    .cf-inner::-webkit-scrollbar{display:none;}
-    .cf-lbl{font-family:var(--sans);font-size:0.52rem;letter-spacing:0.38em;text-transform:uppercase;color:var(--gold);margin-bottom:0.9rem;}
-    .cf-head{font-family:var(--serif);font-weight:300;font-size:clamp(1.8rem,4vw,3rem);color:#fafafa;line-height:1.1;margin-bottom:1rem;}
-    .cf-intro{font-family:var(--sans);font-weight:300;font-size:0.82rem;line-height:1.9;color:rgba(229,224,216,0.7);margin-bottom:2.5rem;max-width:520px;}
-    .cf-row{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;margin-bottom:1.5rem;}
-    .cf-field{display:flex;flex-direction:column;gap:0.5rem;margin-bottom:1.5rem;}
-    .cf-field label{font-family:var(--sans);font-size:0.56rem;letter-spacing:0.22em;text-transform:uppercase;color:var(--ash);}
-    .cf-field input,.cf-field select,.cf-field textarea{
-      background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.1);
-      color:var(--bone);font-family:var(--sans);font-weight:300;font-size:0.82rem;
-      padding:0.85rem 1rem;outline:none;transition:border-color 0.3s;
-      border-radius:0;-webkit-appearance:none;
-    }
-    .cf-field input:focus,.cf-field select:focus,.cf-field textarea:focus{border-color:rgba(184,154,106,0.6);}
-    .cf-field textarea{resize:vertical;min-height:120px;}
-    .cf-field select option{background:#111;color:var(--bone);}
-    .cf-sub{
-      display:inline-block;font-family:var(--sans);font-weight:300;
-      font-size:0.6rem;letter-spacing:0.35em;text-transform:uppercase;
-      color:var(--gold-l);border:1px solid var(--gold);
-      padding:1.1rem 3rem;background:transparent;cursor:pointer;
-      transition:background 0.35s,color 0.35s;width:100%;margin-top:0.5rem;
-    }
-    .cf-sub:hover{background:var(--gold);color:#000;}
-    .cf-foot{
-      margin-top:2.5rem;padding-top:2rem;border-top:1px solid rgba(255,255,255,0.06);
-      display:flex;gap:2rem;flex-wrap:wrap;justify-content:center;
-    }
-    .cf-foot span{font-family:var(--sans);font-size:0.56rem;letter-spacing:0.15em;color:var(--ash);}
-    @media(max-width:640px){
-      .cf-inner{padding:2.5rem 1.8rem;}
-      .cf-row{grid-template-columns:1fr;}
-      #nav{padding:1rem 1.5rem;}
-      .stat-row{gap:2rem;}
-    }
-    
+
     /* ─── Hero ─────────────────────────────────────── */
     #hero {
       position: relative;
@@ -923,8 +873,7 @@
       <p class="reveal reveal-delay-2">
         Crystal works from your high-resolution photographs to create a singular, original artwork of your animal or subject. She also takes her own reference photos and can travel for a fee. A 50% non-refundable deposit holds your place on the schedule. Please reach out for details and timeline.
       </p>
-      <a href="/cdn-cgi/l/email-protection#4f2c3d363c3b2e23203d232e212b200f28222e2623612c2022" class="btn-gold reveal reveal-delay-3">Inquire About a Commission</a>
-    </div>
+      <a href="mailto:crystalorlando@gmail.com?subject=Commission%20Inquiry" class="btn-gold reveal reveal-delay-3">Inquire About a Commission</a>
   </section>
 
   <!-- ─── Galleries ──────────────────────────────────── -->
@@ -958,42 +907,7 @@
     </div>
   </section>
 
-  <!-- Contact form (final destination) -->
-<div id="cform">
-  <div class="cf-inner">
-    <p class="cf-lbl">Begin the Conversation</p>
-    <h2 class="cf-head">Commission<br>an Original Work</h2>
-    <p class="cf-intro">A one of a kind drawing of your animal or a special subject can be yours. Crystal works from your high-resolution photographs. Half down, non-refundable, to hold your place on the schedule.</p>
-    <form action="mailto:crystalorlando@gmail.com" method="get" enctype="text/plain">
-      <div class="cf-row">
-        <div class="cf-field">
-          <label>Name (required)</label>
-          <input type="text" name="name" placeholder="Your full name" required/>
-        </div>
-        <div class="cf-field">
-          <label>Email (required)</label>
-          <input type="email" name="email" placeholder="your@email.com" required/>
-        </div>
-      </div>
-      <div class="cf-field">
-        <label>Phone Number</label>
-        <input type="tel" name="phone" placeholder="Optional"/>
-      </div>
-      <div class="cf-field">
-        <label>I'm interested in</label>
-        <select name="interest">
-          <option>Original Commission</option>
-          <option>Fine Art Print</option>
-          <option>General Inquiry</option>
-          <option>Gallery Information</option>
-        </select>
-      </div>
-      <div class="cf-field">
-        <label>Tell me about your vision (required)</label>
-        <textarea name="message" placeholder="Describe your subject, size preferences, timeline, or any questions..." required></textarea>
-      </div>
-      <button type="submit" class="cf-sub">Send Inquiry</button>
-    </form>
+  
 
   <!-- ─── Footer ─────────────────────────────────────── -->
   <footer>
