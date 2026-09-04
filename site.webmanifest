@@ -1,0 +1,9 @@
+{
+  "name": "Crystal Orlando — Charcoal & Graphite Fine Art",
+  "short_name": "Crystal Orlando",
+  "icons": [{ "src": "/assets/favicon.svg", "sizes": "any", "type": "image/svg+xml" }],
+  "start_url": "/",
+  "display": "browser",
+  "background_color": "#f3efe7",
+  "theme_color": "#f3efe7"
+}
